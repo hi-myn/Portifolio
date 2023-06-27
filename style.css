@@ -14,9 +14,155 @@
 :root {
     --font-nunito : 'Nunito';
     --font-play : 'Playball';
+    --cor--vinho : #910580;
+    --cor-verde : #35432e;
+}
+
+/*Barra de navegação*/
+nav {
+  display: flex;
+width: 1360px;
+padding: 16px 80px;
+justify-content: space-between;
+align-items: center;
+}
+
+#logo-nome {
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 32px;
+}
+
+#links-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  font-family: var(--font-nunito);
+  font-size: 24px;
 }
 
 #tituloLogo {
+  /* line-height: 120%; */
+  font-size: 40px;
    font-family: var(--font-play);
 }
   
+/*Conteudo principal*/
+main {
+  display: flex;
+width: 1360px;
+padding: 16px 80px;
+justify-content: space-between;
+align-items: center;
+}
+
+#content {
+  display: flex;
+width: 484px;
+height: 352px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex-shrink: 0;
+}
+
+#imagem {
+  width: 400px;
+height: 500px;
+border-radius: 50px;
+
+}
+
+#profission{
+  font-size: 24px;
+  font-family: var(--font-nunito);
+  font-weight: bold;
+  color: var(--cor--vinho);
+}
+
+#nome-title {
+  font-family: var(--font-play);
+  font-size: 40px;
+  color: var(--cor-verde);
+}
+
+#descricao{
+  font-size: 24px;
+  font-family: var(--font-nunito);
+  color: black;
+  line-height: 28px;
+}
+
+#links-principais {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#githubLink{
+  padding: 8px 24px;
+  background-color: var(--cor--vinho);
+  color: #fdfbf8;
+  border-radius: 8px;
+  font-family: var(--font-nunito);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+#githubLink:hover {
+  background-color: #fdfbf8;
+  color: var(--cor--vinho);
+}
+
+#linkedinLink {
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: 2px solid var(--cor--vinho);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--font-nunito);
+  color: black;
+}
+
+#linkedinLink:hover {
+  background-color: var(--cor-verde);
+  color: #fdfbf8;
+  border: none;
+}
+
+/*Proejtos area*/
+#secaoUm {
+  display: flex;
+padding: 0px 80px;
+justify-content: center;
+align-items: center;
+gap: 24px;
+margin-top: 50px;
+margin-bottom: 32px;
+}
+
+#secaoDois {
+  display: flex;
+padding: 0px 80px;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+
+.conteudo-secao{
+  font-family: var(--font-nunito);
+  display: flex;
+width: 384px;
+height: 390px;
+padding: 16px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+background: #FFF;
+box-shadow: 0.8875598311424255px 0.8875598311424255px 3.550239324569702px 0px #000;
+}
