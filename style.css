@@ -1,168 +1,215 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Monoton&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playball&display=swap');
 
+/**BACKGROUND*/
+body{
+  background: linear-gradient(270deg, #e8bc09, #fffa06, #ffad06, #d9d9d9);
+  background-size: 800% 800%;
 
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+/*RESET*/
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    background-color: #fdfbf8;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 :root {
-    --font-nunito : 'Nunito';
-    --font-play : 'Playball';
-    --cor--vinho : #910580;
-    --cor-verde : #35432e;
+  --font: 'League Spartan', sans-serif;
 }
 
-/*Barra de navegação*/
-nav {
-  display: flex;
-width: 1360px;
-padding: 16px 80px;
-justify-content: space-between;
-align-items: center;
+/*NAV*/
+#navigation{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-left: 130px;
+  margin-top: 45px;
 }
 
-#logo-nome {
-  display: flex;
-justify-content: center;
-align-items: center;
-gap: 32px;
+.link-nav {
+  color: #000000;
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: normal;
 }
 
-#links-nav {
-  display: flex;
-  align-items: flex-start;
-  gap: 48px;
-  font-family: var(--font-nunito);
-  font-size: 24px;
+.link-nav:hover {
+  color: #a8890b;
+  font-weight: 700;
 }
 
-#tituloLogo {
-  /* line-height: 120%; */
-  font-size: 40px;
-   font-family: var(--font-play);
-}
-  
-/*Conteudo principal*/
-main {
-  display: flex;
-width: 1360px;
-padding: 16px 80px;
-justify-content: space-between;
-align-items: center;
-}
-
+/*Home*/
 #content {
   display: flex;
-width: 484px;
-height: 352px;
-flex-direction: column;
-align-items: flex-start;
-gap: 12px;
-flex-shrink: 0;
+  flex-direction: column;
+  margin-left: 130px;
+  margin-top:100px;
 }
 
-#imagem {
-  width: 400px;
-height: 500px;
-border-radius: 50px;
-
+#nome-title{
+  color: #000000;
+  font-family: var(--font);
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-#profission{
+#profission {
+  color: #000000;
+  font-family: var(--font);
   font-size: 24px;
-  font-family: var(--font-nunito);
-  font-weight: bold;
-  color: var(--cor--vinho);
-}
-
-#nome-title {
-  font-family: var(--font-play);
-  font-size: 40px;
-  color: var(--cor-verde);
-}
-
-#descricao{
-  font-size: 24px;
-  font-family: var(--font-nunito);
-  color: black;
-  line-height: 28px;
+  font-weight: 600;
 }
 
 #links-principais {
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 18px;
+  margin-top: 20px;
 }
 
-#githubLink{
-  padding: 8px 24px;
-  background-color: var(--cor--vinho);
-  color: #fdfbf8;
-  border-radius: 8px;
-  font-family: var(--font-nunito);
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-
-#githubLink:hover {
-  background-color: #fdfbf8;
-  color: var(--cor--vinho);
-}
-
-#linkedinLink {
-  padding: 8px 24px;
-  border-radius: 8px;
-  border: 2px solid var(--cor--vinho);
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: var(--font-nunito);
-  color: black;
-}
-
-#linkedinLink:hover {
-  background-color: var(--cor-verde);
-  color: #fdfbf8;
-  border: none;
-}
-
-/*Proejtos area*/
-#secaoUm {
+/*ABOUT ME*/
+#aboutMe{
   display: flex;
-padding: 0px 80px;
-justify-content: center;
-align-items: center;
-gap: 24px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+#description{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sobre{
+  color: #7c5f00;
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#resume{
+  margin-top: 32px;
+  color: #000C24;
+  font-family: var(--font);
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 170%; /* 40.8px */
+}
+
+#yasmin-image{
+  width: 475px;
+  height: 653px;
+  flex-shrink: 0;
+  margin-left: 155px;
+}
+
+#image{
+  border-radius: 50%;
+}
+
+#cv{
+  width: 170px;
+  height: 53px;
+  display: inline-flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #000C24;
+  color: #FFF;
+  font-family: var(--font);
+  font-size: 16px;
+  margin-top: 48px;
+}
+
+#cv:hover{
+  color: #000000;
+  background: rgb(255,190,23);
+  background: radial-gradient(circle, rgba(255,190,23,1) 0%, rgba(252,235,70,1) 100%);
+  transition: 3s;
+}
+
+/*Area skills*/
+#skills{
+  display: flex;
+}
+
+#content-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px ;
+  margin-left: 111px;
+}
+
+#title-skills {
+  color: #F44336;
+font-family: var(--font);
+font-size: 32px;
+font-weight: 700;
+margin-right: 603px;
+}
+
+#resume-skills{
+  color: #000C24;
+font-family: Spartan;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%; /* 40.8px */
+margin-right: 77px;
+}
+
+#languages {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-item{
+  width: 100px;
+  height: 100px;
+  align-items: baseline;
+  color: #000C24;
+text-align: center;
+font-family: var(--font);
+font-size: 14px;
+font-weight: 600;
+margin-left: 60px;
 margin-top: 50px;
-margin-bottom: 32px;
 }
 
-#secaoDois {
-  display: flex;
-padding: 0px 80px;
-justify-content: center;
-align-items: center;
-gap: 24px;
-}
-
-.conteudo-secao{
-  font-family: var(--font-nunito);
-  display: flex;
-width: 384px;
-height: 390px;
-padding: 16px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 16px;
-background: #FFF;
-box-shadow: 0.8875598311424255px 0.8875598311424255px 3.550239324569702px 0px #000;
+#image-programming{
+  width: 475px;
+height: 653px;
+margin-right: 160px;
+border-radius: 20px;
 }
